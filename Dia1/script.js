@@ -1,9 +1,9 @@
 //#############################################//
-       //##### SANTIAGO JAIMES PEREZ #####//
+//##### SANTIAGO JAIMES PEREZ #####//
 //#############################################//
 
 //Saludeishion//
-console.log ("Hello world");
+console.log("Hello world");
 
 //Tipos de variable//
 //let//
@@ -16,3 +16,16 @@ var saludo1 = "1";
 
 //const//
 const ContrasenaDelicada = 123456;
+
+//listas//
+
+let verduras = ["broccoli", "manzana", "awacate"]
+alert(verduras[1]);
+
+let personas = [{
+       "nombre": "santiago", "apellido": "jaimes", "familiares": [
+              { "id": 1, "nombre": "maria", "apellido": "jaimes" }, [{ "id": 2, "nombre": "Edinson", "apellido": "jaimes" }]
+       ]
+}, "pedro", "santiago", "harley"]
+
+console.log(personas[0]["familiares"][0]["nombre"])

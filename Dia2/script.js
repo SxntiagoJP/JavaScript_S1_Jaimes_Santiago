@@ -1,17 +1,15 @@
 //importaciones///
+import * as estudiantes from './estudiantes.js';
+import * as trainers from './trainers.js';
+import * as admin from './admin.js';
+import * as notas from './data.js';
 import * as menus from './menu.js';
-import * as funciones from './funciones.js';
-import * as listas from './listas.js';
-//Funciones//
 
-menus.menu();
-let opcion=prompt()
-if (opcion === "1") {
-    menus.menuest();
-  } else if (opcion === "2") {
-    menus.menutrai();
-  } else if (opcion === "3") {
-    alert("Bienvenido, Coordinador 🧑‍💼");
-  } else {
-    alert("Opción no válida ❌");
-  }
+
+menus.mostrarMenuPrincipal()
+function ingresocampers(){
+    let contraseña = campus2023
+    let user = alert("hello bro, what's your name?")
+}
+
+

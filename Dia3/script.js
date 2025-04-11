@@ -1,0 +1,1 @@
+let arreglo = ["naya", "daniel", "davis",]
