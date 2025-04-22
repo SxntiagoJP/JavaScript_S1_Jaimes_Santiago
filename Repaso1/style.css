@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    
+    /* Fondo responsivo */
+    background-image: url('./imgs/pokedex\ \(1\).png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcional: efecto parallax */
+    color: white; /* Hace que el texto contraste con el fondo */
+  }
+
+
+
+img {
+    position: relative;
+    top: 10rem;
+    width: 40%;
+    height: auto;
+}
+
+input[type=number] {
+    position: relative;
+    right: 7rem;
+    top: 45rem;
+    width: 70%;
+    font-size: 150%;
+    text-align: center;
+    
+}
+
+button {
+    margin: 0 5%;
+}
+
+.boton1{
+    position: relative;
+    top: 55rem;
+    font-size: 200%;
+}
+
+.boton2{
+    position: relative;
+    top: 52.3rem;
+    left: 10REM;
+    font-size: 200%;
+    
+}
+
+.boton1:hover,
+.boton2:hover {
+  background-color: #888; /* Color al hacer hover */
+  transform: scale(1.05); /* Efecto "zoom" */
+  box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+}
