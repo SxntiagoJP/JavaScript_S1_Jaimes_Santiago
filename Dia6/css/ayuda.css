@@ -40,7 +40,7 @@ h2{
     color: white;
     font-size: 300%;
     top: 12%;
-    left: 3%;
+    left: 1%;
 }
 h3{
     text-align: center;
@@ -49,57 +49,84 @@ h3{
 
 .texto{
     position: absolute;
+    text-align: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:20px;
     font-size: 150%;
-    left: 22%;
+    left: 15%;
     top: 25%;
 }
 
-
 button {
-    position:relative ;
-    padding: 0.1em 0.25em;
-    width: 25em;
-    height: 8em;
-    background-color: black;
-    border: 0.08em solid #000000;
-    border-radius: 0.3em;
-    font-size: 12px;
-    cursor: pointer;
-    top: -900px;
-    left: 2%;
-    font-size: 80%;
-  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #d09306;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  left: 3%;
+  top: -75%;
+  font-size: 100%;
+
   
-  button span {
-    position: absolute;
-    top: -0px;
-    left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0.4em;
-    width: 15em;
-    height: 4em;
-    background-color: black;
-    border-radius: 0.2em;
-    font-size: 1.5em;
-    color: #fff;
-    border: 0.08em solid #fff;
-    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+  color: #ecab0f;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
   }
-  
-  button span:hover {
-    transition: all 0.5s;
-    transform: translate(0, 0.4em);
-    box-shadow: 0 0 0 0 #fff;
+
+  50% {
+    transform: scale(0.95);
   }
-  
-  button span:not(hover) {
-    transition: all 1s;
+
+  100% {
+    transform: scale(1);
   }
-  
+}
+
 
  

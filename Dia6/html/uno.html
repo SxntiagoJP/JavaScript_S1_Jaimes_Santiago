@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Juego de Cartas</title>
   <link rel="stylesheet" href="../css/uno.css" />
 </head>
+
 <body>
+  <div class="Fondo">
+    <a href="../index.html"> <button class="oli" >  <span> Back </span> </button></a>
     <div class="game-container">
-        <h1>Juego de Cartas</h1>
-    
-        <div class="cards">
-          <div>
-            <h2>Tu carta</h2>
-            <img id="player-card" src="https://deckofcardsapi.com/static/img/back.png" alt="Carta jugador">
-          </div>
-          <div>
-            <h2>Bot</h2>
-            <img id="machine-card" src="https://deckofcardsapi.com/static/img/back.png" alt="Carta máquina">
-          </div>
+      <h1>Juego de Cartas</h1>
+
+      <div class="cards">
+        <div>
+          <h2>Tu carta</h2>
+          <img id="player-card" src="https://deckofcardsapi.com/static/img/back.png" alt="Carta jugador">
         </div>
-    
-        <div class="buttons">
-          <button id="draw-button">Repartir cartas</button>
-          <button id="reveal-button" disabled>Voltear cartas</button>
+        <div>
+          <h2>Bot</h2>
+          <img id="machine-card" src="https://deckofcardsapi.com/static/img/back.png" alt="Carta máquina">
         </div>
-    
-        <h3 id="result"></h3>
       </div>
+
+      <div class="buttons">
+        <button id="draw-button">Repartir cartas</button>
+        <button id="reveal-button" disabled>Voltear cartas</button>
+      </div>
+    </div>
+    <h3 id="result"></h3>
+  </div>
+
   <script src="../script.js"></script>
 </body>
+
 </html>
