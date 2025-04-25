@@ -1,57 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 2rem;
-    
-    /* Fondo responsivo */
-    background-image: url('./imgs/pokedex\ \(1\).png'); 
-    background-size: cover;
+
+    background: linear-gradient(to bottom, skyblue 50%, white);
+    background-repeat: no-repeat;
+}
+
+.fondo {
+    font-family: 'Oxanium', cursive;
+    position: relative;
+    background-image: url('./imgs/pokedex\ \(1\).png');
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Opcional: efecto parallax */
-    color: white; /* Hace que el texto contraste con el fondo */
-  }
+    height: 40rem;
+    top: 20rem;
+}
 
 
 
 img {
     position: relative;
-    top: 10rem;
-    width: 40%;
+    left: 54.6rem;
+    top: 3rem;
+    width: 10%;
     height: auto;
 }
 
-input[type=number] {
+input[type=text] {
     position: relative;
-    right: 7rem;
-    top: 45rem;
-    width: 70%;
-    font-size: 150%;
+    right: -32.3rem;
+    top: 27rem;
+    width: 15%;
+    font-size: 120%;
     text-align: center;
-    
+
 }
 
 button {
     margin: 0 5%;
 }
 
-.boton1{
+.boton1 {
     position: relative;
-    top: 55rem;
+    top: 33rem;
+    left: 44.5rem;
     font-size: 200%;
 }
 
-.boton2{
+.boton2 {
     position: relative;
-    top: 52.3rem;
-    left: 10REM;
+    top: 32.9rem;
+    left: 18rem;
     font-size: 200%;
-    
+
 }
 
 .boton1:hover,
 .boton2:hover {
-  background-color: #888; /* Color al hacer hover */
-  transform: scale(1.05); /* Efecto "zoom" */
-  box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+    background-color: #888;
+    /* Color al hacer hover */
+    transform: scale(1.05);
+    /* Efecto "zoom" */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.pokeName {
+    position: relative;
+    top: 38rem;
+    left: 54rem;
+    top: 18rem;
 }

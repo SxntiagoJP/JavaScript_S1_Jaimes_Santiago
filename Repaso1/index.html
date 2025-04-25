@@ -2,27 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Poke api</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Poke api</title>
 </head>
 
 <body>
-
-    
-
+  <div class="fondo">
     <div>
-      <button class= "boton1" cambiarPokemon(-1)>LEFT</button>
+      <button class="boton1" onclick="cambiarPokemon(-1)">LEFT</button>
       <input type="number" id="pokeInput" placeholder="Name or number" min="1" onchange="buscarPokemon()">
-      <button class= "boton2" onclick="cambiarPokemon(1)">RIGHT</button>
+      <button class="boton2" onclick="cambiarPokemon(1)">RIGHT</button>
     </div>
-  
-    <div id="pokeInfo" style="margin-top: 20px;">
+
+    <div id="pokeInfo">
       <h2 id="pokeName">Nombre del Pokémon</h2>
       <img id="pokeImage" src="" alt="Imagen del Pokémon">
     </div>
-  
+  </div>
+
 </body>
 <script src="./script.js"></script>
 
