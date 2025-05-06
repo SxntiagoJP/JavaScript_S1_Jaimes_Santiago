@@ -31,14 +31,14 @@ userForm.addEventListener('submit', async (e) => {
   const id = userIdInput.value;
 
   if (id) {
-    // Actualizar
+    // Actualizandeishion
     await fetch(`${API_URL}/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email }),
     });
   } else {
-    // Crear
+    // Createishion
     await fetch(API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
