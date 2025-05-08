@@ -1,17 +1,23 @@
-// Función para obtener datos de la API
 async function GetApi() {
     try {
-        const response = await fetch('https://681ad14517018fe50578cfc8.mockapi.io/:heroes');
+        const response = await fetch('https://681a335b1ac11556350835ab.mockapi.io/data');
         const data = await response.json();
         console.log(data);
         return data;
     } catch (error) {
         console.error('Error al obtener datos:', error);
-        throw error; // Propaga el error para que pueda ser manejado por quien llame a la función
+        throw error; 
+    }
+}
+async function Traje(){
+    try{
+
+    } catch(error){
+        console.error('Error al obtener datos:', error);
+        throw error; 
     }
 }
 
-// Función para agregar un nuevo héroe
 async function agregarHeroe(event) {
     event.preventDefault();
     
@@ -26,7 +32,7 @@ async function agregarHeroe(event) {
             productora: document.getElementById('productora').value
         };
 
-        const response = await fetch('https://681ad14517018fe50578cfc8.mockapi.io/:data', {
+        const response = await fetch('https://681a335b1ac11556350835ab.mockapi.io/data', {
             method: 'POST',
             body: JSON.stringify(nuevoHeroe),
             headers: {
@@ -41,12 +47,9 @@ async function agregarHeroe(event) {
         const data = await response.json();
         console.log("Héroe guardado:", data);
         
-        // Aquí puedes agregar lógica después de guardar, como:
-        // - Mostrar un mensaje de éxito
-        // - Limpiar el formulario
-        // - Recargar la lista de héroes
+
         alert('Héroe guardado con éxito!');
-        event.target.reset(); // Limpia el formulario
+        event.target.reset(); 
         
     } catch (error) {
         console.error('Error al guardar el héroe:', error);
@@ -54,11 +57,11 @@ async function agregarHeroe(event) {
     }
 }
 
-// Llamar a GetApi al cargar la página (opcional)
+
 document.addEventListener('DOMContentLoaded', () => {
     GetApi().catch(error => console.error('Error inicial:', error));
     
-    // Asignar el event listener al formulario
+
     const formulario = document.querySelector('form');
     if (formulario) {
         formulario.addEventListener('submit', agregarHeroe);
@@ -66,24 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('No se encontró el formulario');
     }
 });
-
-const botonTraje = document.getElementById('btn-traje');
-botonTraje.addEventListener('click', TrajeDIV);
-
-const div_trajes = document.getElementById('DIVTrajes');
-async function TrajeDIV(){
-    div_trajes.innerHTML = 
-    `
-    <div class="container mt-5 mb-5">
-    <div class="card">
-      <div class="card-header">
-        <h2> Registro de trajes</h2>
-      </div>
-      <div class="card-body">
-        <h4 class="mt-5 text-primary">Trajes del personaje</h4>
-        <p class="fs-5 text-primary">En esta seccion podra registrar  los nombres de los trajes usados por el actor en cada una de las peliculas.</p>
-      </div>
-    </div>
-  </div>
-`;
-}
